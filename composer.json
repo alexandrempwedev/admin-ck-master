@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "alexandrempwedev\\admin-ck-master\\AdminCKServiceProvider"
+                "alexandrempwedev\\adminck-ext\\AdminCKServiceProvider"
             ]
         }
     }
