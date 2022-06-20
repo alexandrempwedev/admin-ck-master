@@ -1,0 +1,35 @@
+{
+    "name": "fourn\/admin-ck",
+    "description": "Easy way to use ckfinder and ckeditor in laravel-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fourn",
+            "email": "fourn@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "laravel/framework": "^5.5|^6.0",
+        "pimple/pimple": "^3.0",
+        "monolog/monolog": "^1.4|^2.0",
+        "league/flysystem": "^1.0",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "league/flysystem-cached-adapter": "^1.0",
+        "spatie/flysystem-dropbox": "^1.0",
+        "encore/laravel-admin": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fourn\\AdminCK\\": "src",
+            "CKSource\\CKFinder\\": "connector/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fourn\\AdminCK\\AdminCKServiceProvider"
+            ]
+        }
+    }
+}
